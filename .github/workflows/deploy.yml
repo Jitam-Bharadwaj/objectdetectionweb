@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       # Checkout the repository
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 18
+          node-version: 22.11.0
 
       # Install Dependencies
       - name: Install Dependencies
